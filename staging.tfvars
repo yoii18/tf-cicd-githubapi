@@ -1,0 +1,5 @@
+rgname       = "rg-staging"
+strgacctname = "ststagingjpneast001"
+location     = "japan east"
+groupname    = "storage-blob-contributors-group"
+adfname      = "adf-stg-jpneast-001-yoii18"
