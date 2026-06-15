@@ -28,7 +28,7 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       - name: terraform initialisation
         run: |
-              terroform init \
+              terraform init \
               -backend-config="resource_group_name=rg-tfstate" \
               -backend-config="storage_account_name=${{secrets.TF_STATE_STORAGE_ACCOUNT}}" \
               -backend-config="container_name=staging" \
