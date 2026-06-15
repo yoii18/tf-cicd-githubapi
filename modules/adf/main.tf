@@ -24,6 +24,6 @@ data "azuread_service_principal" "ad_sp" {
 }
 
 resource "azuread_group_member" "storage_blob_group_member_addition" {
-  member_object_id = azuread_service_principal.ad_sp.object_id
-  group_object_id  = azuread_group.storage_blob_group.object_id
+  member_object_id = data.azuread_service_principal.ad_sp.object_id
+  group_object_id  = data.azuread_group.storage_blob_group.object_id
 }
