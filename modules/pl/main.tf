@@ -1,6 +1,6 @@
 
 ################ Linked Services ################
-resource "azurerm_data_factory_linked_custom_service" "adf_rest_ls" {
+resource "azurerm_data_factory_linked_custom_service" "name" {
   type = "RestService"
   name = "adf_rest_ls"
   type_properties_json = jsonencode({
