@@ -21,3 +21,8 @@ module "adf_create" {
 
   depends_on = [azurerm_resource_group.rg_create]
 }
+
+module "pl_create" {
+  source = "./modules/pl"
+  adf_id = module.adf_create.adf_id
+}
