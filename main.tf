@@ -23,6 +23,7 @@ module "adf_create" {
 }
 
 module "pl_create" {
-  source = "./modules/pl"
-  adf_id = module.adf_create.adf_id
+  source   = "./modules/pl"
+  adf_id   = module.adf_create.adf_id
+  strgname = var.strgacctname
 }
